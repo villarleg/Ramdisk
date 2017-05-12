@@ -112,8 +112,9 @@ on property:sys.zeusis.aerial.switch=stoped
     class late_start
     disabled
 
+# Modified path from stock to load our driver
 on property:sys.factory.zeusis.wifi.test=running
-    insmod /system/lib/modules/qca_cld/wlan.ko con_mode=5
+    insmod /system/lib/modules/wlan.ko con_mode=5
 
 on property:factory.zeusis.wifi.test=stopped
     rmmod wlan

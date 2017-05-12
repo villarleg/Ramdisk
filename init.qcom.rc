@@ -747,6 +747,7 @@ service wifi_fccutild /system/bin/wifi_fccutild
     disabled
     oneshot
 
+# Modified path from stock to load our driver
 on property:wifi.fccutild.load.qcacld=true
     insmod /system/lib/modules/wlan.ko con_mode=5
 
